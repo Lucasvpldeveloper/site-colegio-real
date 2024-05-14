@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('/Fontes/idroid.otf');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1:#FFA832;
+    --cor2:#FE8330;
+    --cor3:#FE5F2F;
+    --cor4:#FD3A2D;
+    --cor5:#FFCC33;
+
+    --fontpadrão: Arial, Verdana, Helvetica, Sans-serif;
+    --font-destaque: "Bebas Neue", sans-serif;
+    --font-android: "Android", sans-serif;
+}
+
+body {
+    background-color: var(--cor2);
+    font-family: var(--fontpadrão);
+}
+
+a.external::after {
+    content: "\00A0🔗";
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    min-height: 150px;
+    padding-top: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.minha-foto-esquerda {
+    align-self: flex-start;
+    padding-left: 100px;
+}
+
+.minha-foto-direita {
+    align-self: flex-end;
+    padding-right: 100px;
+}
+
+header > img.header-foto {
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    margin-left: 30px;
+    position: relative;
+} 
+
+header > h1 {
+    text-align: center;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    color: white;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.562);
+    font-weight: normal;
+}
+
+header  p {
+    font-family: var(--fontpadrão);
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.247);
+    padding-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    display: block;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor4);
+    font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    color: var(--cor4);
+    font-family: var(--font-android);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
+    font-weight: normal;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bolder;
+}
+
+main a {
+    color: var(--cor4);
+    background-color: #fe8230d8;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+    
+}
+
+div.video {
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: #fe823078;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.393);
+}
+
+aside > h3 {
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px -0px -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+aside ul {
+    list-style-type: "✔️\00A0\00A0";
+    list-style-position: inside;
+    columns: 2;
+}
+
+img {
+    align-items: center;
+    display: block;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.306);
+}
+
+nav > a {
+    padding: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5s;
+    border-radius: 2px;
+}
+
+nav a:hover {    
+    background-color: rgba(0, 0, 0, 0.804);
+    color: var(--cor3);
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    font-family: var(--fontpadrão);
+    font-size: 0.8em;
+    text-align: center;
+    padding: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
