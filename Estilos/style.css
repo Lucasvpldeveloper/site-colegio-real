@@ -39,25 +39,6 @@ a.external::after {
     content: "\00A0🔗";    
 }
 
-.slogan {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-header img {
-    max-width: 100%;
-    height: auto;
-}
-
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-
 header {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
     min-height: 150px;
