@@ -45,31 +45,6 @@ header {
     padding-top: 10px;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-}
-
-.minha-foto-esquerda {
-    align-self: flex-start;
-    padding-left: 100px;
-}
-
-.minha-foto-direita {
-    align-self: flex-end;
-    padding-right: 100px;
-}
-
-header > img.header-foto {
-    background-size: cover;
-    background-position: center;
-    height: 100px;
-    margin-left: 30px;
-    position: relative;
-} 
-
 header > h1 {
     text-align: center;
     font-family: var(--font-destaque);
